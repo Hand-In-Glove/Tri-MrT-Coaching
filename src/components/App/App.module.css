@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+  height: 100%;
+  color: rgb(253, 243, 247);
+}
+
+.burgerWrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}

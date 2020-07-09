@@ -1,0 +1,48 @@
+.burgerMenu {
+  position: absolute;
+  overflow-x: hidden;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: rgb(88, 105, 218);
+  height: 100vh;
+  width: 0;
+  opacity: 0.98;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  z-index: 8;
+}
+
+.openMenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: rgb(88, 105, 218);
+  height: 100vh;
+  width: 50vw;
+  opacity: 0.98;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  z-index: 8;
+}
+
+.burgerMenu > a,
+.openMenu > a {
+  text-decoration: none;
+}
+
+.navIcon {
+  width: 2rem;
+  z-index: 11;
+}
+
+.linkName {
+  font-size: 2rem;
+  color: rgb(253, 243, 247);
+}

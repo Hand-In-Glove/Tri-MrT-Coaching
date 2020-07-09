@@ -1,0 +1,47 @@
+.navBar > nav > ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navBar > nav {
+  width: 100%;
+}
+
+.navLink {
+  display: block;
+  color: rgb(253, 243, 247);
+  font-size: 1rem;
+  border-right: 3px solid rgb(253, 243, 247);
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+.navLinkActive {
+  color: red;
+}
+
+.navBar {
+  position: relative;
+  height: 4rem;
+  background: radial-gradient(rgb(47, 47, 49), rgb(37, 37, 39));
+  display: flex;
+  align-items: center;
+}
+
+#navLogo {
+  display: block;
+  height: 100%;
+}
+
+#navLogo > img {
+  max-height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .navBar > nav {
+    display: none;
+  }
+}

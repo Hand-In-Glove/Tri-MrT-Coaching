@@ -1,0 +1,61 @@
+.formContainer {
+  width: 400px;
+  margin: 0 auto;
+  background: radial-gradient(rgb(47, 47, 49), rgb(37, 37, 39));
+  border-radius: 10px;
+  height: 100%;
+}
+
+.formStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formStyle > label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+.formStyle > label > input {
+  border: none;
+  border-bottom: 4px solid var(--blue);
+}
+
+.formStyle > label > input,
+.formStyle > label > textarea {
+  padding: 0.8rem 0.8rem 0 0.8rem;
+  width: 100%;
+  background-color: rgb(253, 243, 247);
+}
+
+.submitBtn {
+  background: linear-gradient(skyblue, dodgerblue);
+  color: rgb(253, 243, 247);
+  font-weight: bold;
+  font-size: 1rem;
+  max-width: 25vw;
+  margin: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  grid-row: 4 / span 1;
+  grid-column: auto;
+}
+
+@media only screen and (max-width: 400px) {
+  .formContainer {
+    width: 100%;
+    max-height: 100vh;
+  }
+
+  .formStyle > label {
+    margin-top: 1.3rem;
+  }
+
+  .formStyle > label > input,
+  .formStyle > label > textarea {
+    width: 80%;
+    background-color: rgb(253, 243, 247);
+  }
+}
